@@ -1,0 +1,25 @@
+<%- include('../partial/_header') %>
+
+<div class="col-md-8 align-self-center">
+    <div class="card">
+        <div class="card-header">
+            <h3>Вхід</h3>
+        </div>
+        <div class="card-body">
+            <form method="POST" action="/login">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="Електронна пошта" name="email" aria-label="Email" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon2"><i class="bi bi-lock"></i></span>
+                    <input type="password" class="form-control" placeholder="Пароль" name="password" aria-label="Password" aria-describedby="basic-addon2">
+                </div>
+                <button type="submit" class="btn btn-primary">Увійти</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<%- include('../partial/_footer') %>

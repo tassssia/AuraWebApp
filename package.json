@@ -1,0 +1,18 @@
+{
+  "name": "aura_aerial_app",
+  "version": "0.0.1",
+  "description": "This is an app that will help current participants and ones who would like to join get more info and news about 'Aura Aerial Team', review schedule etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app",
+    "dev": "nodemon app"
+  },
+  "author": "Taia Posternak",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "path": "^0.12.7"
+  }
+}

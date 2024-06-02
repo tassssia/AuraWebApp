@@ -1,0 +1,44 @@
+<%- include('../partial/_header') %>
+
+<div class="col-md-8 mx-auto mt-5 align-self-center">
+    <div class="card">
+        <div class="card-header">
+            <h4>Реєстрація</h4>
+        </div>
+        <div class="card-body">
+            <form method="POST" action="/signup">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Нік</label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <input type="text" class="form-control" placeholder="Нік" name="username" aria-describedby="basic-addon1" id="username">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Електронна пошта</label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon2">@</span>
+                        <input type="email" class="form-control" placeholder="Електронна пошта" name="email" aria-describedby="basic-addon2" id="email">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Пароль</label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon3"><i class="bi bi-lock"></i></span>
+                        <input type="password" name="password" class="form-control" placeholder="Пароль" aria-describedby="basic-addon3" id="password">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="repassword" class="form-label">Повторіть пароль</label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon4"><i class="bi bi-lock"></i></span>
+                        <input type="password" class="form-control" placeholder="Пароль" aria-describedby="basic-addon4" name="repassword" id="repassword">
+                    </div>
+                </div>
+                <input type="submit" class="btn btn-primary" value="Зареєструватись" />
+            </form>
+        </div>
+    </div>
+</div>
+
+<%- include('../partial/_footer') %>
