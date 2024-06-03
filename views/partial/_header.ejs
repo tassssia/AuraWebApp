@@ -21,9 +21,6 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="/home">Головна</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="/about">Про нас</a>
                     </li>
                     <li class="nav-item">
@@ -35,9 +32,19 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/rules">Наші правила</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/login">Вхід</a>
-                    </li>
+                    <% if(currentUser != null) { %>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/logout">Вийти</a>
+                        </li>
+                    <% }; %>
+                    <% if(currentUser == null) { %>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login">Увійти</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/signup">Зареєструватись</a>
+                        </li>
+                    <% }; %>
                 </ul>
             </div>
         </div>
