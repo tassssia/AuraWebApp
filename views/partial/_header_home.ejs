@@ -10,6 +10,19 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        .custom-btn {
+            background-color: #9999ff;
+            border-color: #9999ff;
+            padding: 40px 0 40px 0;
+        }
+
+        .custom-btn:hover {
+            background-color: #6b6bb2;
+        }
+    </style>
+
 </head>
 <body class="d-flex flex-column min-vh-100 justify-content-between">
     <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
@@ -20,18 +33,6 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about">Про нас</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/coaches">Тренери та напрямки</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/price">Ціни</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/rules">Наші правила</a>
-                    </li>
                     <% if(currentUser != null) { %>
                         <li class="nav-item">
                             <a class="nav-link" href="/logout">Вийти</a>
